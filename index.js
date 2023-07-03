@@ -7,6 +7,7 @@ app.listen(8800, () => {
   console.log("backend running");
 });
 
+//Make a get request http://localhost:8800/api/data in any API testing tool Postman or Thunderclient
 app.get("/api/data", async (req, res) => {
   try {
     const response = await axios.get(
